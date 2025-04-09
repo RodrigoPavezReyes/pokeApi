@@ -65,7 +65,7 @@ function filtrarPokemon(e) {
         .then((response) => response.json())
         .then(data =>{
             
-            if(botonId ==="ver todos"){
+            if(botonId ==="ver-todos"){
                 mostrarPokemon(data);
             }else{
                 const tipos = data.types.map(type => type.type.name);
